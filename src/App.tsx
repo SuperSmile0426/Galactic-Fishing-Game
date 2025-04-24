@@ -4,7 +4,6 @@ import {
   Tabs, 
   Tab, 
   Box, 
-  Typography, 
   Paper,
   Table,
   TableBody,
@@ -75,7 +74,7 @@ function App() {
     return () => clearInterval(interval);
   }, []);
 
-  const handleTabChange = (event: React.SyntheticEvent, newValue: number) => {
+  const handleTabChange = (_: React.SyntheticEvent, newValue: number) => {
     setTabValue(newValue);
   };
 
